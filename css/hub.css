@@ -1,0 +1,475 @@
+/* cores  #acafd2 494ea2 */
+
+/* scrolbar */
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+/* fim de scrol */
+
+*{
+    margin: 0; padding: 0; font-size: 100%; border: none; outline: none; font-weight: 300; box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+
+}
+body{
+    background-color: #dddddd; 
+}
+a:link 
+{ 
+ text-decoration:none; 
+} 
+ul{list-style: none;}
+img{max-width: 100%;}
+
+/* mobile firts */
+.nome-grupo{
+    color: #494ea2;
+}
+.ipg{
+  font-size: 12px;
+    
+}
+.nome{
+    height: 10vh;
+    background: #494ea2;
+    box-shadow: 2px 2px 1px #000;
+    -webkit-box-shadow: 2px 2px 1px #000;
+    -moz-box-shadow: 2px 2px 1px #000;
+}
+.conteudo-menssagem{
+    height: 76vh;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: scroll;
+    overflow-x: auto;
+}
+.enviar{
+    height: 12vh;
+    background: #494ea2;
+    margin-top: -15px;
+}
+
+.sua-mensagem .texto-mensagem{
+    
+    background: #494EA2;
+    color: #eee;
+    border:1px solid #004baa;
+    border-radius: 14px 14px 0px 14px;
+    /* display: flex; */
+    /* flex-direction: row-reverse; */
+    
+}
+/* .sua-mensagem{
+    float: right;
+    min-width: 50%;
+    max-width: 80%;
+    margin-right: 0%;
+} */
+.sua-mensagem .texto-mensagem,.hora-data{
+    margin-left: 50%;
+}
+.outra-mensagem .texto-mensagem{
+    background: #eee;
+    color: #222C35;
+    border:1px solid #ddd;
+    border-radius: 14px 14px 14px 0px;
+    /* width: 45vw; */
+    margin-right: 50%;
+    
+}
+.outra-mensagem .outra-hora{
+    font-size:1rem;
+    color: #494EA2;
+    margin-left: 30%;
+
+}
+.hora-data{
+    font-size:1rem;
+    color: #494EA2;
+}
+.texto-mensagem{
+    padding: 9px, 14px;
+    font-size: 1.rem;
+    margin-bottom: 5px;
+}
+.formes{
+    background-color: #222C35;
+}
+
+textarea{
+    float:right;
+    color: gray;
+    resize: none;
+    background-color: #F2F2F2;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    border-radius: 129px 129px 129px 129px;
+    -moz-border-radius: 129px 129px 129px 129px;
+    -webkit-border-radius: 129px 129px 129px 129px;
+    border: 0px solid #000000;   
+    
+}
+.texto{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 65vw;
+    margin-left: 135px;
+}
+
+.nome-titular{
+    color: #D9D9D9;
+    font-weight: bold;
+}
+.icones{
+    cursor: pointer;
+    margin-top: -35px;
+    margin-left: 425px;
+    color: #eee;
+}
+.drop{
+    float: left;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.apps-two{
+    float: left;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+.content-modal{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: none;
+    background-color: #494ea2;
+}
+.menu-up{
+    height: 10vh;
+    box-shadow: 2px 2px 1px #000;
+    -webkit-box-shadow: 2px 2px 1px #000;
+    -moz-box-shadow: 2px 2px 1px #000;
+}
+.lista-amigo{
+    height: 90vh;
+    
+}
+#conversation-list{
+    overflow-y: scroll;
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    .conversation img{
+        height: 40px;
+        border-radius: 100%;
+        grid-row: span 2;
+    }
+    .conversation{
+        
+        color:#ddd;
+        font-size: 1.1rem;
+        padding: 20px 20px 20px 15px; 
+        cursor: pointer;
+        width: 100%;
+           
+    }
+    .title-text{
+        margin-top: -37px;
+        margin-left: 50px;
+        font-weight: bold;
+        color:#eee;
+        padding-left: 5px;
+        white-space: nowrap; 
+        max-width: 108px;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+       
+    }
+    .created-date{
+        color:#ddd;
+        font-size: 1rem;
+        margin-top: -34px;
+        margin-right: 10px;
+        float:right;
+    }
+    .conversation-message{
+        color: #ffffff;
+        padding-left: 5px;
+        white-space: nowrap; 
+        width: 400px; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
+        margin-left:50px;
+    }
+    .ultima{
+        color: #201f1f;
+    }
+    .modo{
+        margin-top: 3px;
+        margin-left: 5px;
+
+    }
+    .menu-botoes{
+        margin-top: -60px;
+        margin-right: 5px;
+        float: right;
+        cursor: pointer;
+        color: #eee;
+        
+    }
+    .lateral{
+        display: none;
+    }
+    .modo-dois{
+        display: none;       
+    }
+    .container-modal-amigos{
+        color: #eeeeee;
+        margin-top: 10px;
+        width: 80%;
+        margin-left: 10%;
+        height: 40vh;
+        background-color: #494EA2;
+        border-radius: 1%;
+      
+        overflow: scroll;
+        overflow-x: auto;
+       
+        
+    }
+    .nome_notifica{
+        float: left;
+        margin-left: 30px;
+    }
+    .notifica{
+        margin-left: 45px;
+        text-align: center;
+        margin-top: 20px;
+        width: 80%;
+        
+       
+    }
+    .notifica.title-text{
+        float: left;
+        /* display: none; */
+    }
+    .data_notifica{
+      
+        float: right;
+    }
+    .notifica img{
+        float: left;
+        height: 40px;
+        border-radius: 100%;
+
+
+    }
+    .close{
+        color: #eeeeee;
+    
+    }
+    @media screen and (min-width:320px){
+        .enviar{
+            margin-top: 0.4px;
+            height: 11vh;
+        }
+        .apps{
+            margin-bottom: -30px;
+            display: none;
+        }
+    }
+    @media screen and (min-width:375px){
+        .apps{
+            display: none;
+            /* margin-bottom: -17px; */
+        }    
+        
+    }
+    @media screen and (min-width:680px){
+        .apps{
+            margin-right: 580px;
+            margin-bottom: -17px;
+        }
+        .enviar{
+            margin-top: 0.5px;
+            height: 11vh;
+        }
+        .icones{
+            margin-left: 620px;
+        }
+    }
+
+    /* ipad */
+    @media screen and (min-width:1024px){
+       
+        .sair{
+            float: right;
+            margin-top: -50px;
+            margin-left: -50px;
+            color: #eee;
+        }
+        .enviar{
+            margin-top: 0.5px;
+            height: 11vh;
+        }
+        .apps{
+            margin-right: 850px;
+            margin-bottom: -15px;
+        }
+
+        .icones{
+            display: none;
+        }
+        
+        .texto{
+
+            width: 77vw;
+
+        }
+
+        .lateral{
+            display: flex;
+            height: 100vh;
+            width: 7vw;
+            float: left;
+            background-color: #3a3e82;
+            border-right: 1px solid black;
+            overflow: scroll;
+            overflow-x: auto;
+        }
+        .created-date,.title-text,.created-date,.conversation-message{
+            display: none;
+        }
+        .hub{
+            float: right;
+            width: 93vw;
+            height: 100vh;
+        }
+        .modo-dois{
+            display: flex;
+        }
+        .sair{
+            float: right;
+            margin-top: -50px;
+            margin-left: 1010px;
+            cursor: pointer;
+        }
+        .modo{
+            float: left;
+            margin-top: -50px;
+            margin-left: 400px;
+        }
+        .close{
+            display: none;
+        }
+       
+    }
+    @media screen and (min-width:1280px){
+        .icones{
+            display: none;
+        }
+        .apps{
+            margin-bottom: -15px;
+            margin-right: 925px;
+        }
+        .sair{
+            float: right;
+            margin-top: -50px;
+            margin-left: 950px;
+        }
+        .texto{
+    
+            width: 67vw;
+    
+        }
+    
+        .lateral{
+            display: flex;
+            height: 100vh;
+            width: 20vw;
+            float: left;
+            background-color: #3a3e82;
+            border-right: 1px solid black;
+            overflow: scroll;
+            overflow-x: auto;
+            
+        }
+        .created-date,.title-text,.conversation-message{
+            display: flex;
+            width: 13vw;
+        }
+        .created-date{
+          margin-right: -100px;
+        }
+        .ultima{
+            display: none;
+        }
+        .conversation{
+            width: 20vw;
+        }
+        .hub{
+            float: right;
+            width: 80vw;
+            height: 100vh;
+        }
+        .modo-dois{
+            display: flex;
+        }
+        .menu-botoes{
+            float: left;
+            margin-left: 450px;
+            margin-top: -50px;
+        }
+        .modo{
+            float: left;
+            margin-top: -51px;
+            margin-left: 350px;
+        }
+        .close{
+            display: none;
+        
+        }
+        .sua-mensagem .texto-mensagem{
+            margin-left: 430px;
+        }
+       }
+
+       @media screen and (min-width:1366px){
+        .sair{
+            float: right;
+            margin-top: -50px;
+            margin-left: 1010px;
+        }
+       }
+      
